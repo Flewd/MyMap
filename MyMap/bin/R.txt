@@ -428,6 +428,8 @@ int drawable ic_plusone_standard_off_client 0x7f020050
 int drawable ic_plusone_tall_off_client 0x7f020051
 int drawable powered_by_google_dark 0x7f020052
 int drawable powered_by_google_light 0x7f020053
+int id LatET 0x7f0a0056
+int id LongET 0x7f0a0055
 int id MenuFragment 0x7f0a0053
 int id action_bar 0x7f0a0045
 int id action_bar_activity_content 0x7f0a0003
@@ -448,6 +450,7 @@ int id adjust_width 0x7f0a001f
 int id always 0x7f0a0014
 int id beginning 0x7f0a001b
 int id book_now 0x7f0a002b
+int id button1 0x7f0a0057
 int id buyButton 0x7f0a0028
 int id buy_now 0x7f0a002c
 int id buy_with_google 0x7f0a002d
@@ -508,7 +511,6 @@ int id strict_sandbox 0x7f0a0027
 int id submit_area 0x7f0a0050
 int id tabMode 0x7f0a000c
 int id terrain 0x7f0a0022
-int id textView1 0x7f0a0055
 int id title 0x7f0a003b
 int id up 0x7f0a0001
 int id useLogo 0x7f0a0013

@@ -1,9 +1,17 @@
 package com.example.mymap;
 
 //import android.app.Activity;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -12,31 +20,25 @@ import android.app.FragmentTransaction;
 
 
 public class MainActivity extends FragmentActivity {
-
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-//        googleMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-        
-//        final LatLng TutorialsPoint = new LatLng(21 , 57);
-//        Marker TP = googleMap.addMarker(new MarkerOptions().position(TutorialsPoint).title("TutorialsPoint")); 
-
-      //  final LatLng myLatLng = new LatLng(googleMap.getMyLocation().getLatitude() , googleMap.getMyLocation().getLongitude());
-      //  Marker myLocation = googleMap.addMarker(new MarkerOptions().position(myLatLng).title("TutorialsPoint")); 
-
     }
-    public void SwitchFragment(View view){
+    public void DropPin(View view){
     	
+   	 EditText LongET = (EditText) findViewById(R.id.LongET);
+     String Longatude = LongET.getText().toString();
+     
+     EditText LatET = (EditText) findViewById(R.id.LatET);
+     String Latitude = LatET.getText().toString();
     	
-        Fragment frag;
-        frag = new MenuFragment();
-
-        FragmentManager fm = getFragmentManager();
-	    FragmentTransaction fragmentTransaction = fm.beginTransaction();
-	    fragmentTransaction.replace(R.id.map, frag);
-	    fragmentTransaction.commit();
+    GoogleMap googleMap = ((SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
+    	
+      final LatLng TutorialsPoint = new LatLng(Float.valueOf(LongET.getText().toString()), Float.valueOf(LatET.getText().toString()));
+      Marker TP = googleMap.addMarker(new MarkerOptions().position(TutorialsPoint).title("User Pin")); 
 	    
     }
     

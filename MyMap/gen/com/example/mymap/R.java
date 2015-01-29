@@ -2063,6 +2063,7 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020053;
     }
     public static final class id {
+        public static final int MenuFragment=0x7f0a0053;
         public static final int action_bar=0x7f0a0045;
         public static final int action_bar_activity_content=0x7f0a0003;
         public static final int action_bar_container=0x7f0a0044;
@@ -2109,7 +2110,7 @@ containing a value of this type.
         public static final int image=0x7f0a0037;
         public static final int listMode=0x7f0a000a;
         public static final int list_item=0x7f0a0039;
-        public static final int map=0x7f0a0053;
+        public static final int map=0x7f0a0054;
         public static final int match_parent=0x7f0a002a;
         public static final int middle=0x7f0a001d;
         public static final int monochrome=0x7f0a0031;
@@ -2142,6 +2143,7 @@ containing a value of this type.
         public static final int submit_area=0x7f0a0050;
         public static final int tabMode=0x7f0a000c;
         public static final int terrain=0x7f0a0022;
+        public static final int textView1=0x7f0a0055;
         public static final int title=0x7f0a003b;
         public static final int up=0x7f0a0001;
         public static final int useLogo=0x7f0a0013;
@@ -2199,7 +2201,8 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int support_simple_spinner_dropdown_item=0x7f030018;
+        public static final int activity_menu_fragment=0x7f030018;
+        public static final int support_simple_spinner_dropdown_item=0x7f030019;
     }
     public static final class raw {
         public static final int gtm_analytics=0x7f050000;
@@ -2368,6 +2371,8 @@ containing a value of this type.
         public static final int hello_world=0x7f0b0034;
         public static final int store_picture_message=0x7f0b0011;
         public static final int store_picture_title=0x7f0b0010;
+        public static final int title_activity_map_fragment=0x7f0b0035;
+        public static final int title_activity_menu_fragment=0x7f0b0036;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */

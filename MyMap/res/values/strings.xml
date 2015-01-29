@@ -3,5 +3,7 @@
 
     <string name="app_name">MyMap</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_map_fragment">MapFragment</string>
+    <string name="title_activity_menu_fragment">MenuFragment</string>
 
 </resources>
